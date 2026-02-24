@@ -23,6 +23,21 @@ const router = createRouter({
       name: 'boardEdit',
       component: () => import('../views/BoardWrite.vue'),
     },
+    {
+      path: '/user/login',
+      name: 'userLogin',
+      component: () => import('../views/UserLogin.vue'),
+    },
+    {
+      path: '/user/signup',
+      name: 'userSignup',
+      component: () => import('../views/UserSignup.vue'),
+    },
+    {
+      path: '/board',
+      name: 'boardList',
+      component: () => import('../views/BoardList.vue'),
+    },
   ],
 })
 
